@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Kolaborasi Kelompok</title>
+    <title>Portal Akademik - Tugas Kelompok Git</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-        <h1>Selamat Datang di Website Kami</h1>
-        <p>Ini adalah project tugas menggunakan Git & GitHub.</p>
-        
-        <div class="team-section">
-            <h3>Anggota Kelompok:</h3>
-            <ul>
-                <li>Febrian</li>
-                <li>Kartika</li>
-                <li>Anggie</li>
-                <li>Fathur</li>
-            </ul>
-        </div>
 
-        <button id="btnKlik">Klik Saya!</button>
-        <p id="pesan" class="hidden">Halo! Terima kasih sudah berkunjung. Tetap semangat belajar Git!</p>
+<body>
+    <div class="dashboard-card">
+        <header class="card-header">
+            <h2>SISTEM INFORMASI AKADEMIK</h2>
+            <p class="subtitle">Modul Praktikum Manajemen Versi & Kolaborasi</p>
+        </header>
+
+        <main class="card-body">
+            <section class="info-section">
+                <h3>Informasi Project</h3>
+                <p><strong>Mata Kuliah:</strong> Perancangan Web & SIA</p>
+                <p><strong>Kode Capaian:</strong> SUB-CPMK-07-3-1</p>
+                <p><strong>Status Tugas:</strong> Selesai Diarsip</p>
+            </section>
+
+            <section class="team-section">
+                <h3>Tim Pengembang (Kelompok)</h3>
+                <div class="team-grid">
+                    <span class="member-tag">Febrian</span>
+                    <span class="member-tag">Kartika</span>
+                    <span class="member-tag">Anggie</span>
+                    <span class="member-tag">Fathur</span>
+                </div>
+            </section>
+
+            <button id="btnVerifikasi" class="btn-primary">Verifikasi Status Kelompok</button>
+            <div id="statusAlert" class="alert hidden">
+                <p>✅ <strong>Sistem Terverifikasi:</strong> Seluruh anggota tim telah berhasil melakukan kontribusi
+                    commit pada Repository GitHub!</p>
+            </div>
+        </main>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
